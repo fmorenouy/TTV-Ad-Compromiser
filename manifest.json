@@ -1,7 +1,7 @@
 {
   "name": "ttv Ad Compromiser",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "content_security_policy": "script-src 'self' https://raw.githubusercontent.com/* https://*.imgur.com/*; object-src 'self'",
   "content_scripts": [
     {
@@ -14,5 +14,8 @@
     "default_popup": "popup.html",
     "default_title": "ttv Ad Compromiser"
   },
-  "permissions": ["storage", "https://twitch.tv/*"]
+  "permissions": ["storage"],
+  "host_permissions": [
+  "https://twitch.tv/*"
+]
 }
